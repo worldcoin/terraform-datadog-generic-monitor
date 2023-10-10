@@ -23,7 +23,7 @@ Pre-commit:
 
 | Name | Version |
 |------|---------|
-| <a name="provider_datadog"></a> [datadog](#provider\_datadog) | 3.19.1 |
+| <a name="provider_datadog"></a> [datadog](#provider\_datadog) | ~> 3.12 |
 
 ## Modules
 

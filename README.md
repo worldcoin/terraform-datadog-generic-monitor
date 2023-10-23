@@ -1,6 +1,6 @@
-# terraform-datadog-generic-monitor
+# Fork kabisa/terraform-datadog-generic-monitor repository, which is no longer maintained.
 
-Fork of kabisa/terraform-datadog-generic-monitor (not maintained)
+We use it to monitor clusters, and module has deprecations which we need to fix before deprecation turns into error in next provider upgrade.
 
 This module is a base module for most of our datadog alerts.
 A good example use can be found [here](https://github.com/kabisa/terraform-datadog-system)

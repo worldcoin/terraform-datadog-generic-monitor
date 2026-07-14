@@ -16,14 +16,14 @@ Pre-commit:
 ## Requirements
 
 | Name | Version |
-|------|---------|
-| <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.12 |
+| ---- | ------- |
+| <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | >= 3.12 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_datadog"></a> [datadog](#provider\_datadog) | ~> 3.12 |
+| ---- | ------- |
+| <a name="provider_datadog"></a> [datadog](#provider\_datadog) | >= 3.12 |
 
 ## Modules
 
@@ -32,19 +32,19 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [datadog_monitor.generic_datadog_monitor](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/monitor) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_additional_tags"></a> [additional\_tags](#input\_additional\_tags) | Additional tags to set on the monitor. Good tagging can be hard but very useful to make cross sections of the environment. Datadog has a few default tags. https://docs.datadoghq.com/getting_started/tagging/ is a good place to start reading about tags | `list(string)` | `[]` | no |
 | <a name="input_alert_message"></a> [alert\_message](#input\_alert\_message) | Message to be sent when the alert threshold is hit | `string` | n/a | yes |
 | <a name="input_alerting_enabled"></a> [alerting\_enabled](#input\_alerting\_enabled) | If set to false no alerts will be sent based on this monitor | `bool` | `true` | no |
 | <a name="input_anomaly_recovery_window"></a> [anomaly\_recovery\_window](#input\_anomaly\_recovery\_window) | recovery\_window value, e.g. last\_15m Can only be used for anomaly monitors. https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/monitor#nested-schema-for-monitor_threshold_windows | `any` | `null` | no |
 | <a name="input_anomaly_trigger_window"></a> [anomaly\_trigger\_window](#input\_anomaly\_trigger\_window) | trigger\_window value, e.g. last\_15m Can only be used for anomaly monitors. https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/monitor#nested-schema-for-monitor_threshold_windows | `any` | `null` | no |
-| <a name="input_auto_resolve_time_h"></a> [auto\_resolve\_time\_h](#input\_auto\_resolve\_time\_h) | Time of hours after which a triggered monitor that receives no data is automatically resolved. | `number` | `null` | no |
+| <a name="input_auto_resolve_time_h"></a> [auto\_resolve\_time\_h](#input\_auto\_resolve\_time\_h) | Time of hours after which a triggered monitor that receives no data is automatically resolved. | `number` | `4` | no |
 | <a name="input_critical_recovery"></a> [critical\_recovery](#input\_critical\_recovery) | n/a | `number` | `null` | no |
 | <a name="input_critical_threshold"></a> [critical\_threshold](#input\_critical\_threshold) | n/a | `number` | `null` | no |
 | <a name="input_custom_message"></a> [custom\_message](#input\_custom\_message) | This field give the option to put in custom text. Both 'note' and 'docs' are prefixed in the template with 'note:' and 'docs:' respectively. 'custom\_message' allows for free format | `string` | `""` | no |
@@ -75,6 +75,6 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_alert_id"></a> [alert\_id](#output\_alert\_id) | n/a |
 <!-- END_TF_DOCS -->

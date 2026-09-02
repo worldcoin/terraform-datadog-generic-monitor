@@ -65,7 +65,6 @@ No modules.
 | <a name="input_query"></a> [query](#input\_query) | Query that's based on a metric to be used to raise an alert | `string` | n/a | yes |
 | <a name="input_recovery_message"></a> [recovery\_message](#input\_recovery\_message) | Recovery message to be sent when the alert threshold is no longer hit | `string` | `""` | no |
 | <a name="input_require_full_window"></a> [require\_full\_window](#input\_require\_full\_window) | n/a | `bool` | `true` | no |
-| <a name="input_restricted_roles"></a> [restricted\_roles](#input\_restricted\_roles) | A list of unique role identifiers to define which roles are allowed to edit the monitor. | `list(string)` | `[]` | no |
 | <a name="input_service"></a> [service](#input\_service) | Service name of what you're monitoring. This also sets the service:<service> tag on the monitor | `string` | n/a | yes |
 | <a name="input_service_display_name"></a> [service\_display\_name](#input\_service\_display\_name) | n/a | `string` | `null` | no |
 | <a name="input_type"></a> [type](#input\_type) | n/a | `string` | `"metric alert"` | no |

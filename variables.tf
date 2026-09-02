@@ -151,12 +151,6 @@ variable "notify_no_data" {
   default     = false
 }
 
-variable "restricted_roles" {
-  description = "A list of unique role identifiers to define which roles are allowed to edit the monitor."
-  type        = list(string)
-  default     = []
-}
-
 variable "name_prefix" {
   description = "Can be used to prefix to the Monitor name"
   type        = string

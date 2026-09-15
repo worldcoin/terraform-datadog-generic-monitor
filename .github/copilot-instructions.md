@@ -16,7 +16,7 @@
 - Trace changed inputs, outputs, defaults, resource addresses, provider constraints, and module pins through affected consumers. Check companion changes and the stated release, merge, apply, migration, rollback, or cutover order when the changed contract depends on them.
 - Confirm code, generated documentation, examples, and the pull request description agree on identifiers, versions, behavior, consumers, compatibility, rollout, and validation.
 - Review failures separately from author mistakes. Identify change-caused failures, but describe runner outages, remote-service failures, timeouts, missing credentials, and pre-existing failures as CI or external blockers when the evidence supports that classification. Do not count repeated runs as distinct pull requests.
-- When AI materially shaped retained code or pull request text, verify the applicable AI label and that the body names each tool and publishes the actual initial user prompt plus material follow-up prompts. A task summary, “AI assisted,” or chat link alone is insufficient.
+- When AI materially shaped retained code, documentation, commits, pull request text, or review replies, verify the applicable AI label when the repository provides it and that the body names each tool and publishes the actual initial user prompt plus material follow-up prompts. A task summary, “AI assisted,” or chat link alone is insufficient.
 - Respect explicit redactions of secrets and sensitive personal data. Do not request hidden system/developer instructions, internal reasoning, unavailable private context, or reconstruction of unavailable prompt text.
 
 ## Review lifecycle
